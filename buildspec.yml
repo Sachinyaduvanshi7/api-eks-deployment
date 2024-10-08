@@ -36,6 +36,6 @@ phases:
       - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG
       - echo Deploying to EKS...
       - kubectl get nodes
-      -  #kubectl apply -f eks_cicd/deployment.yml
+      - kubectl apply -f eks_cicd/deployment.yml
       - kubectl apply -f eks_cicd/service.yml
       - kubectl rollout restart deployment/api-gateway-deployment # Restart your deployment
