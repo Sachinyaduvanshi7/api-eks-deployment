@@ -5,9 +5,9 @@ const app = express();
 
 // defines routes and their ports
 const routes = {
-  "/orders": "http://orders-service:3001",
-  "/products": "http://products-service:3002",
-  "/": "http://react-front-service:3000",
+  "/orders": "http://orders:3001",
+  "/products": "http://products:3002",
+  "/": "http://react-front:3000",
 };
 
 //create a proxy for each route
