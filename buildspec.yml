@@ -37,4 +37,5 @@ phases:
       - echo Deploying to EKS...
       - kubectl get nodes
       - kubectl apply -f eks_cicd/deployment.yml
+      - - kubectl apply -f eks_cicd/service.yml
       - kubectl rollout restart deployment/api-gateway-deployment # Restart your deployment
