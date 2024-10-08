@@ -17,4 +17,4 @@ for (const route in routes) {
 }
 
 const PORT = 8000;
-app.listen(PORT, () => console.log("API GATEWAY STARTED 8000"));
+app.listen(PORT, () => console.log("API GATEWAY START 8000"));
